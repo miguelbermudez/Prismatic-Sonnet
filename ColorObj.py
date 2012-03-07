@@ -9,6 +9,9 @@ class ColorObj(object):
 	def syllable_count(self):
 		return self.syllbs
 
+	def name(self):
+		return self.name
+
 	
 	def __repr__(self):
 		return "Color: " + self.name + " Hex" + self.hex + " Syllbs" + str(self.syllbs)
