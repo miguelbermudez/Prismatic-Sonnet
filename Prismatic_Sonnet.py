@@ -149,7 +149,7 @@ for n in range(0, num_lines):
 		z = zip(rgbColorC.getRGB(), rgbColorD.getRGB() )
 		avgRGB = [ sum(x)/2 for x in z ]
 		avgHex = '#%02x%02x%02x' % tuple(avgRGB)
-		hexColorHolder = ColorObj('unknown', avgHex[1:], 0) #skip '#'
+		hexColorHolder = ColorObj('unknown', avgHex[1:], 0) #skip '#'	
 		rgbColorE = getNearestColor(hexColorHolder)
 		#print "\tColorE: " + str(rgbColorE)
 		print "#" + str(n) + ": " + random_aphorism.replace(last_word, rgbColorE.name)
